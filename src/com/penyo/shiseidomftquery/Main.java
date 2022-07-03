@@ -1,5 +1,3 @@
-// Copyright (c) Penyo. All rights reserved.
-
 package com.penyo.shiseidomftquery;
 
 /**
