@@ -54,16 +54,16 @@ public class Core {
             return "您输入了错误的生产批号！";
         }
         getMFT();
-        StringBuilder result = new StringBuilder("您的产品生产于："
+        StringBuilder result = new StringBuilder("生产日期："
                 + MFT_YEAR + "年" + MFT_MONTH + "月" + MFT_DATE + "日。");
         Calendar now = Calendar.getInstance(), mft = Calendar.getInstance();
         mft.set(MFT_YEAR, MFT_MONTH, MFT_DATE);
         if ((now.get(Calendar.YEAR) - mft.get(Calendar.YEAR) + 1) * 365
                 + Math.abs(now.get(Calendar.DAY_OF_YEAR)
                         - mft.get(Calendar.DAY_OF_YEAR)) < LIMIT * 365)
-            result.append("产品保质期为" + LIMIT + "年，请尽快使用。");
+            result.append("保质期为" + LIMIT + "年，请尽快使用。");
         else
-            result.append("产品已过期，请勿继续使用！");
+            result.append("已过期，请勿继续使用！");
         return result.toString();
     }
 }
