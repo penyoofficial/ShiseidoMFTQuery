@@ -2,7 +2,11 @@ package com.penyo.shiseidomftquery;
 
 import java.awt.BorderLayout;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
 
 /**
  * 该类定义了友好的图形用户界面。
